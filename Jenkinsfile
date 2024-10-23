@@ -24,8 +24,8 @@ pipeline {
         stage('Docker Build & Push') {
             steps {
                 script {
-                    dockerImage = docker.build("Junyan714/flask-ci-app:latest")
-                    docker.withRegistry('https://registry.hub.docker.com', 'dckr_pat_I_j3eW5YDX8FZ5MjjW1Z8SYfFSI') {
+                    dockerImage = docker.build("myusername/flask-ci-app:latest")
+                    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub-credentials') {
                         dockerImage.push()
                     }
                 }
