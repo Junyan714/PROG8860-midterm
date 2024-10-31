@@ -1,4 +1,4 @@
-# Flask CI App
+# Flask CI App for test
 
 This repository contains a sample Python Flask application integrated with a Continuous Integration (CI) pipeline using GitHub Actions. The CI pipeline includes build and test phases and can optionally build and publish a Docker image. Additionally, a Jenkins pipeline setup is provided for those who want to replicate the process using Jenkins.
 
